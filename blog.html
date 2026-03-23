@@ -48,50 +48,38 @@
 
 <body>
     <!-- 1. Header/Navigation Bar -->
-    <header>
-        <div class="container nav-container">
-            <a href="home.html" class="logo">
-                <i class="fa-solid fa-chart-line"></i>
-                LearnSpace<span>Digital</span>
-            </a>
+    <div class="pill-nav-container">
+        <a href="home.html" class="brand-pill">
+            <i class="fa-solid fa-chart-line"></i>
+            Learnspace <span>Digital</span>
+        </a>
+        <nav class="pill-nav">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="dropbtn">Services <i class="fa-solid fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="seo-optimization.html">SEO Optimization</a>
+                        <a href="social-media-marketing.html">Social Media</a>
+                        <a href="ppc-advertising.html">PPC Advertising</a>
+                        <a href="content-marketing.html">Content Marketing</a>
+                        <a href="email-marketing.html">Email Marketing</a>
+                        <a href="web-design.html">Web Design</a>
+                    </div>
+                </li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-            <div class="mobile-menu-btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="dropdown">
-                        <a href="services.html" class="dropbtn">Services <i class="fa-solid fa-chevron-down"
-                                style="font-size: 0.8em; margin-left: 5px;"></i></a>
-                        <div class="dropdown-content">
-                            <a href="seo-optimization.html">SEO Optimization</a>
-                            <a href="social-media-marketing.html">Social Media</a>
-                            <a href="ppc-advertising.html">PPC Advertising</a>
-                            <a href="content-marketing.html">Content Marketing</a>
-                            <a href="email-marketing.html">Email Marketing</a>
-                            <a href="web-design.html">Web Design</a>
-                        </div>
-                    </li>
-                    <li><a href="blog.html" class="active">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <div class="search-box">
-                    <input class="search-txt" type="text" name="" placeholder="Type to search">
-                    <a class="search-btn" href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                </div>
-                <a href="contact.html#contact" class="btn btn-primary">Get Started</a>
-            </div>
+        <div class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
         </div>
-    </header>
 
-    <div style="height: 80px;"></div> <!-- Spacer for fixed header -->
+        <a href="contact.html#contact" class="cta-pill">Get Started</a>
+    </div>
 
     <!-- 8. Resources/Blog -->
     <section id="blog" class="blog reveal mesh-gradient">
@@ -231,7 +219,7 @@
     </section>
 
     <!-- Newsletter Signup -->
-    <div class="newsletter-section">
+    <!-- <div class="newsletter-section">
         <div class="newsletter-content">
             <span class="badge" style="background: rgba(255,255,255,0.2); color: white;">Newsletter</span>
             <h2 style="color:aliceblue">Get Premium Insights in Your Inbox</h2>
@@ -243,7 +231,7 @@
         </div>
     </div>
     </div>
-    </section>
+    </section> -->
 
     <!-- <main class="home-hero">
         <div class="home-card">
@@ -256,7 +244,10 @@
 
 
     <!-- 7. Reviews/Testimonials -->
-    <section class="testimonials">
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Testimonials</span>
+    </div>
+    <section class="testimonials bg-soft-1">
         <div class="container">
             <h2 class="section-title">Client Feedback</h2>
             <p class="section-subtitle">Don't just take our word for it.</p>

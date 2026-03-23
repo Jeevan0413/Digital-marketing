@@ -16,45 +16,38 @@
 
 <body>
     <!-- Header -->
-    <header>
-        <div class="container nav-container">
-            <a href="home.html" class="logo">
-                <i class="fa-solid fa-chart-line"></i>
-                LearnSpace<span>Digital</span>
-            </a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="dropdown">
-                        <a href="services.html" class="dropbtn active">Services <i class="fa-solid fa-chevron-down"
-                                style="font-size: 0.8em; margin-left: 5px;"></i></a>
-                        <div class="dropdown-content">
-                            <a href="seo-optimization.html">SEO Optimization</a>
-                            <a href="social-media-marketing.html">Social Media</a>
-                            <a href="ppc-advertising.html">PPC Advertising</a>
-                            <a href="content-marketing.html">Content Marketing</a>
-                            <a href="email-marketing.html">Email Marketing</a>
-                            <a href="web-design.html">Web Design</a>
-                        </div>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <div class="search-box">
-                    <input class="search-txt" type="text" name="" placeholder="Type to search">
-                    <a class="search-btn" href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                </div>
-                <a href="contact.html#contact" class="btn btn-primary">Get Started</a>
-            </div>
-        </div>
-    </header>
+    <div class="pill-nav-container">
+        <a href="home.html" class="brand-pill">
+            <i class="fa-solid fa-chart-line"></i>
+            Learnspace <span>Digital</span>
+        </a>
+        <nav class="pill-nav">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="dropbtn active">Services <i class="fa-solid fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="seo-optimization.html">SEO Optimization</a>
+                        <a href="social-media-marketing.html">Social Media</a>
+                        <a href="ppc-advertising.html">PPC Advertising</a>
+                        <a href="content-marketing.html">Content Marketing</a>
+                        <a href="email-marketing.html">Email Marketing</a>
+                        <a href="web-design.html">Web Design</a>
+                    </div>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-    <div style="height: 80px;"></div>
+        <div class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <a href="contact.html#contact" class="cta-pill">Get Started</a>
+    </div>
 
     <!-- Content Marketing Hero Section -->
     <section class="hero reveal mesh-gradient">
@@ -77,7 +70,10 @@
     </section>
 
     <!-- Core Pillars -->
-    <section class="why-choose reveal" style="background: white;">
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Core Pillars</span>
+    </div>
+    <section class="why-choose reveal bg-soft-2">
         <div class="container">
             <h2 class="section-title">Content That Connects</h2>
             <p class="section-subtitle">Our content strategies build trust and authority for your brand.</p>
@@ -112,7 +108,10 @@
     </section>
 
     <!-- Content Strategy -->
-    <section id="strategy" class="about reveal" style="background: whitesmoke;">
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Our Process</span>
+    </div>
+    <section id="strategy" class="about reveal bg-soft-1">
         <div class="container">
             <h2 class="section-title">🔹 How Content Drives Growth</h2>
             <p class="section-subtitle">A strategic approach to content creation and distribution.</p>
@@ -145,7 +144,10 @@
     </section>
 
     <!-- Results Section -->
-    <section class="testimonials reveal" style="background: white;">
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Results</span>
+    </div>
+    <section class="testimonials reveal bg-soft-2">
         <div class="container">
             <h2 class="section-title">Proven Content Results</h2>
             <p class="section-subtitle">Content that delivers measurable business impact.</p>

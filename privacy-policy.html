@@ -12,118 +12,48 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .policy-container {
-            padding: 120px 0 80px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .policy-content {
-            background: white;
-            padding: 60px;
-            border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(249, 115, 22, 0.1);
-        }
-
-        .policy-content h1 {
-            color: var(--primary-color);
-            margin-bottom: 20px;
-            font-size: 2.5rem;
-        }
-
-        .policy-content .last-updated {
-            color: #6B7280;
-            margin-bottom: 40px;
-            font-size: 0.9rem;
-            display: block;
-        }
-
-        .policy-section {
-            margin-bottom: 40px;
-        }
-
-        .policy-section h2 {
-            color: #111827;
-            margin-bottom: 20px;
-            font-size: 1.5rem;
-            border-bottom: 2px solid var(--secondary-color);
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-
-        .policy-section p,
-        .policy-section li {
-            color: #4B5563;
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
-
-        .policy-section ul {
-            list-style-type: disc;
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
-
-        @media (max-width: 768px) {
-            .policy-content {
-                padding: 30px;
-                border-radius: 0;
-            }
-
-            .policy-container {
-                padding-top: 100px;
-            }
-        }
-    </style>
 </head>
 
 <body>
-    <header>
-        <div class="container nav-container">
-            <a href="home.html" class="logo">
-                <i class="fa-solid fa-chart-line"></i>
-                LearnSpace<span>Digital</span>
-            </a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="dropdown">
-                        <a href="services.html" class="dropbtn">Services <i class="fa-solid fa-chevron-down"
-                                style="font-size: 0.8em; margin-left: 5px;"></i></a>
-                        <div class="dropdown-content">
-                            <a href="seo-optimization.html">SEO Optimization</a>
-                            <a href="social-media-marketing.html">Social Media</a>
-                            <a href="ppc-advertising.html">PPC Advertising</a>
-                            <a href="content-marketing.html">Content Marketing</a>
-                            <a href="email-marketing.html">Email Marketing</a>
-                            <a href="web-design.html">Web Design</a>
-                        </div>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <div class="search-box">
-                    <input class="search-txt" type="text" name="" placeholder="Type to search">
-                    <a class="search-btn" href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                </div>
-                <a href="contact.html" class="btn btn-primary">Get Started</a>
-            </div>
-        </div>
-    </header>
+    <div class="pill-nav-container">
+        <a href="home.html" class="brand-pill">
+            <i class="fa-solid fa-chart-line"></i>
+            Learnspace <span>Digital</span>
+        </a>
+        <nav class="pill-nav">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="dropbtn">Services <i class="fa-solid fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="seo-optimization.html">SEO Optimization</a>
+                        <a href="social-media-marketing.html">Social Media</a>
+                        <a href="ppc-advertising.html">PPC Advertising</a>
+                        <a href="content-marketing.html">Content Marketing</a>
+                        <a href="email-marketing.html">Email Marketing</a>
+                        <a href="web-design.html">Web Design</a>
+                    </div>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-    <main class="mesh-gradient">
+        <div class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <a href="contact.html#contact" class="cta-pill">Get Started</a>
+    </div>
+
+    <main>
         <div class="container">
             <div class="policy-container">
                 <div class="policy-content">
                     <h1>Privacy Policy</h1>
-                    <span class="last-updated">Last Updated: February 13, 2026</span>
+                    <span class="last-updated">Last Updated: February 14, 2026</span>
 
                     <section class="policy-section">
                         <h2>1. Introduction</h2>

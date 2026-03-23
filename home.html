@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="UTF-8">
@@ -12,157 +12,260 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <!-- <style>
-        .home-hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: linear-gradient(135deg, #FFF7ED 0%, #FFFFFF 100%);
-            padding: 15px 10px;
-        }
-
-        .home-card {
-            max-width: 800px;
-            padding: 40px 20px;
-            background: white;
-            border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(249, 115, 22, 0.1);
-        }
-
-        .home-card h1 {
-            font-size: 3.5rem;
-            color: #111827;
-            margin-bottom: 20px;
-        }
-
-        .home-card p {
-            font-size: 1.25rem;
-            color: #4B5563;
-            margin-bottom: 40px;
-        }
-
-        .highlight {
-            color: #F97316;
-        }
-    </style> -->
+    <!-- Home Hero Styles Removed -->
 </head>
 
 <body>
 
-    <header>
-        <div class="container nav-container">
-            <a href="home.html" class="logo">
-                <i class="fa-solid fa-chart-line"></i>
-                LearnSpace<span>Digital</span>
-            </a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="home.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="dropdown">
-                        <a href="services.html" class="dropbtn">Services <i class="fa-solid fa-chevron-down"
-                                style="font-size: 0.8em; margin-left: 5px;"></i></a>
-                        <div class="dropdown-content">
-                            <a href="seo-optimization.html">SEO Optimization</a>
-                            <a href="social-media-marketing.html">Social Media</a>
-                            <a href="ppc-advertising.html">PPC Advertising</a>
-                            <a href="content-marketing.html">Content Marketing</a>
-                            <a href="email-marketing.html">Email Marketing</a>
-                            <a href="web-design.html">Web Design</a>
-                        </div>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <div class="search-box">
-                    <input class="search-txt" type="text" name="" placeholder="Type to search">
-                    <a class="search-btn" href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                </div>
-                <a href="digital_marketing_original.html#cta" class="btn btn-primary">Get Started</a>
-            </div>
-        </div>
-    </header>
-    <section id="home" class="hero reveal slide-in-left mesh-gradient">
-        <!-- Parallax Background Elements -->
-        <div class="hero-parallax-bg">
-            <div class="parallax-shape shape-1" data-speed="0.08"></div>
-            <div class="parallax-shape shape-2" data-speed="-0.04"></div>
-            <div class="parallax-shape shape-3" data-speed="0.12"></div>
+    <div class="pill-nav-container">
+        <a href="home.html" class="brand-pill">
+            <i class="fa-solid fa-chart-line"></i>
+            Learnspace <span>Digital</span>
+        </a>
+        <nav class="pill-nav">
+            <ul class="nav-links">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="dropbtn">Services <i class="fa-solid fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="seo-optimization.html">SEO Optimization</a>
+                        <a href="social-media-marketing.html">Social Media</a>
+                        <a href="ppc-advertising.html">PPC Advertising</a>
+                        <a href="content-marketing.html">Content Marketing</a>
+                        <a href="email-marketing.html">Email Marketing</a>
+                        <a href="web-design.html">Web Design</a>
+                    </div>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
         </div>
 
-        <div class="container hero-content">
-            <div class="hero-text parallax-layer" data-speed="0.03">
-                <h1 data-animation="gradual-spacing">Scale Your Business With <span class="gradient-text">Data-Driven
-                        Marketing</span></h1>
-                <p>We craft strategies that turn clicks into customers. Experience growth like never before.</p>
-                <div class="hero-btns">
-                    <a href="contact.html#contact" class="btn btn-primary magnetic glow-on-hover"
-                        style="margin-right: 15px;">Free
-                        Consultation</a>
-                    <a href="services.html#services" class="btn btn-outline magnetic">Explore Services</a>
+        <a href="contact.html#contact" class="cta-pill">Get Started</a>
+    </div>
+
+    <section id="home" class="hero-modern">
+        <div class="modern-grid-overlay"></div>
+
+        <div class="reveal fade-up" style="margin-bottom: 40px; z-index: 2;">
+            <span class="badge"
+                style="background: rgba(168, 85, 247, 0.1); color: var(--neon-purple); border: 1px solid rgba(168, 85, 247, 0.2); border-radius: 50px; padding: 8px 20px; font-weight: 700; text-transform: uppercase; font-size: 0.8rem;">LearnSpace
+                Digital</span>
+        </div>
+
+        <div class="hero-modern-wrapper">
+            <div class="hero-modern-content">
+                <h1 class="reveal mask-reveal">
+                    Fueling brands with <span class="accent-text">Innovation</span>
+                </h1>
+                <!-- 
+                <p class="reveal fade-up" style="transition-delay: 0.2s;">
+                    Gain financial acumen using our expert tools and insights to efficiently manage your money and
+                    enhance
+                    personal wealth.
+                </p> -->
+
+                <div class="hero-modern-btns reveal fade-up" style="transition-delay: 0.4s;">
+                    <a href="contact.html#contact" class="btn btn-modern-white magnetic">Get started - for free</a>
+                    <a href="services.html" class="btn btn-modern-dark magnetic">Discover LearnSpace</a>
                 </div>
             </div>
-            <div class="hero-image parallax-layer" data-speed="0.06">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Digital Marketing Dashboard" id="hero-laptop-img">
+
+            <!-- Orbiting Skills Component -->
+            <div class="hero-orbit-container reveal fade-right" style="transition-delay: 0.6s;">
+                <div class="orbiting-skills">
+                    <div class="center-logo">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <!-- Inner Orbit -->
+                    <div class="orbit orbit-inner">
+                        <div class="skill-icon" title="SEO"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="skill-icon" title="Content Marketing"><i class="fa-solid fa-pen-nib"></i></div>
+                        <div class="skill-icon" title="Email Marketing"><i class="fa-solid fa-envelope-open-text"></i>
+                        </div>
+                    </div>
+
+                    <!-- Middle Orbit -->
+                    <div class="orbit orbit-middle">
+                        <div class="skill-icon" title="Social Media"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="skill-icon" title="Web Design"><i class="fa-solid fa-code"></i></div>
+                        <div class="skill-icon" title="PPC Advertising"><i class="fa-solid fa-bullhorn"></i></div>
+                        <div class="skill-icon" title="Analytics"><i class="fa-solid fa-chart-pie"></i></div>
+                    </div>
+
+                    <!-- Outer Orbit -->
+                    <div class="orbit orbit-outer">
+                        <div class="skill-icon" title="Strategy"><i class="fa-solid fa-lightbulb"></i></div>
+                        <div class="skill-icon" title="Branding"><i class="fa-solid fa-fingerprint"></i></div>
+                        <div class="skill-icon" title="Growth"><i class="fa-solid fa-rocket"></i></div>
+                        <div class="skill-icon" title="Video Marketing"><i class="fa-solid fa-video"></i></div>
+                        <div class="skill-icon" title="E-commerce"><i class="fa-solid fa-bag-shopping"></i></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 2.1 Hero Section V2 (Alternative Premium Design) -->
-    <section id="hero-v2" class="hero-v2 reveal slide-in-left mesh-gradient">
-        <div class="container hero-v2-container">
-            <div class="hero-v2-card stagger-container">
-                <span class="badge stagger-fade-item">Elevate Your Presence</span>
-                <h1 class="stagger-fade-item">Transform Your Digital <span class="highlight">Future</span></h1>
-                <p class="stagger-fade-item">We combine cutting-edge technology with creative strategies to deliver
-                    exceptional results for your
-                    business.</p>
-                <div class="hero-v2-btns stagger-fade-item">
-                    <a href="#contact" class="btn btn-primary">Start Your Project</a>
-                    <a href="#about" class="btn btn-text">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-                <div class="hero-v2-stats">
-                    <div class="v2-stat">
-                        <div class="stat-value">
-                            <strong class="stat-animate" data-target="10">0</strong><span class="highlight">x</span>
+    <!-- React Divider: Hero to Why Choose Us -->
+    <div class="divider divider-with-text divider-gradient reveal fade-in-up">
+        <span class="divider-text">Our Expertise</span>
+    </div>
+
+    <!-- 3. Our Story: Split-Section Design -->
+    <!-- <section id="story" class="split-section bg-soft-2" style="padding: 100px 0; position: relative; z-index: 1;">
+        <div class="split-container">
+            <div class="split-content-side stagger-container">
+                <span class="badge stagger-fade-item" style="margin-bottom: 20px;">Our Legacy</span>
+                <h2 class="display-title stagger-fade-item">Fueling Brands with <span
+                        class="highlight">Innovation</span></h2>
+                <p class="lead-text stagger-fade-item">Founded in 2015, LearnSpace Digital emerged with a single
+                    mission: to empower
+                    businesses by navigating the complexities of the digital landscape with clarity and creativity.</p>
+                <p class="stagger-fade-item"
+                    style="margin-bottom: 30px; font-size: 1.1rem; color: var(--text-muted); line-height: 1.7;">By
+                    combining deep-dive data analytics with boundary-pushing creative vision, we help brands find their
+                    authentic voice in a crowded marketplace. Our team of experts works tirelessly to ensure that every
+                    campaign, every design, and every line of code serves a higher purpose—transforming your vision into
+                    a digital legacy.</p>
+
+                <div class="floating-cards-container stagger-fade-item"> -->
+    <!-- Stat Card 1 -->
+    <!-- <div class="float-card" style="--delay: 0.1s;">
+                        <div class="float-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <div class="float-info">
+                            <span class="float-num stat-animate" data-target="500">0</span><span
+                                class="highlight">+</span>
+                            <span class="float-lab">Projects Delivered</span>
                         </div>
-                        <span>Growth Rate</span>
-                    </div>
-                    <div class="v2-stat">
-                        <div class="stat-value">
-                            <strong class="stat-animate" data-target="500">0</strong><span class="highlight">+</span>
+                    </div> -->
+    <!-- Stat Card 2 -->
+    <!-- <div class="float-card highlight-card" style="--delay: 0.3s; transform: translate(40px, -20px);">
+                        <div class="float-icon"><i class="fa-solid fa-heart"></i></div>
+                        <div class="float-info">
+                            <span class="float-num stat-animate" data-target="98">0</span><span
+                                class="highlight">%</span>
+                            <span class="float-lab">Client Love</span>
                         </div>
-                        <span>Clients Won</span>
-                    </div>
-                    <div class="v2-stat">
-                        <div class="stat-value">
-                            <strong class="stat-animate" data-target="24">0</strong><span class="highlight">/7</span>
-                        </div>
-                        <span>Expert Support</span>
                     </div>
                 </div>
             </div>
 
-            <!-- NEW: Floating Asset (Premium Icon Fallback) -->
-            <div class="hero-v2-asset zoom-in" data-animation="zoom-in">
-                <div class="asset-icon-box floating">
-                    <i class="fa-solid fa-rocket"></i>
+            <div class="split-image-side">
+                <style>
+                    .legacy-slider {
+                        position: relative;
+                        overflow: hidden;
+                        border-radius: 24px;
+                        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+                    }
+
+                    .slider-wrapper {
+                        position: relative;
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    .slider-wrapper img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        opacity: 0;
+                        transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+                        transform: scale(1.1);
+                    }
+
+                    .slider-wrapper img.active {
+                        opacity: 1;
+                        transform: scale(1);
+                        z-index: 1;
+                    }
+
+                    .slider-btn {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background: #fff;
+                        color: #3b82f6;
+                        border: none;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        z-index: 20;
+                        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                        font-size: 1.5rem;
+                        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+                    }
+
+                    .slider-btn:hover {
+                        background: #f8fafc;
+                        transform: translateY(-50%) scale(1.1);
+                        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+                    }
+
+                    .prev-btn {
+                        left: -35px;
+                    }
+
+                    .next-btn {
+                        right: -35px;
+                    }
+
+                    .experience-badge {
+                        z-index: 25;
+                    }
+                </style>
+                <div class="parallax-wrapper">
+                    <div class="parallax-img-container legacy-slider" id="legacySlider">
+                        <div class="slider-wrapper">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                                alt="Team Collaboration" class="parallax-element active">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
+                                alt="Strategy Session" class="parallax-element">
+                            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=80"
+                                alt="Digital Innovation" class="parallax-element">
+                        </div>
+                        <button class="slider-btn prev-btn" onclick="moveSlider(-1)"><i
+                                class="fa-solid fa-arrow-left"></i></button>
+                        <button class="slider-btn next-btn" onclick="moveSlider(1)"><i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number stat-animate" data-target="10">0</span>
+                        <span class="exp-text">Years Of Excellence</span>
+                    </div>
                 </div>
-                <div class="asset-glow"></div>
+                <script>
+                    let currentSlide = 0;
+                    const slides = document.querySelectorAll('#legacySlider .slider-wrapper img');
+
+                    function moveSlider(direction) {
+                        slides[currentSlide].classList.remove('active');
+                        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+                        slides[currentSlide].classList.add('active');
+                    }
+
+                    setInterval(() => moveSlider(1), 5000);
+                </script>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- 3. About Teaser
-    <section id="about-teaser" class="about-teaser reveal animated-gradient-bg">
+    <section id="about-teaser" class="about-teaser reveal bg-soft-1">
         <div class="container">
             <div class="about-grid">
                 <div class="about-text">
@@ -190,10 +293,11 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- 5. Why Choose Us -->
-    <section class="why-choose reveal">
+    <div class="divider divider-dashed reveal fade-in-up"></div>
+    <section class="why-choose reveal bg-soft-1">
         <div class="container">
             <h2 class="section-title">Why Choose Us</h2>
             <p class="section-subtitle">What sets us apart from the competition.</p>
@@ -245,7 +349,10 @@
         </div>
     </section>
     <!-- 7. Reviews/Testimonials -->
-    <section class="testimonials reveal">
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Client Love</span>
+    </div>
+    <section class="testimonials reveal bg-soft-1">
         <div class="container">
             <h2 class="section-title" data-animation="zoom-in">Client Feedback</h2>
             <p class="section-subtitle">Don't just take our word for it.</p>
@@ -398,28 +505,30 @@
         </div>
     </section>
     <!-- 10. Contact Us -->
-    <section id="contact" class="contact reveal">
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Get In Touch</span>
+    </div>
+    <section id="contact" class="contact reveal bg-soft-1">
         <div class="container">
             <h2 class="section-title"><span class="letter-pull-up">Contact Us</span></h2>
             <p class="section-subtitle">Let's start a conversation.</p>
 
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Get In Touch</h3>
-                    <p style="margin-bottom: 30px;">Have questions? Send us a message and we'll respond within 24 hours.
-                    </p>
+                    <h3>Get In Touch</h3>
+                    <p>Have questions? Send us a message and we'll respond within 24 hours.</p>
 
                     <div style="margin-bottom: 20px;">
                         <i class="fa-solid fa-location-dot" style="color: var(--secondary-color); width: 25px;"></i>
-                        Hi-tech city, Madhapur,Hyderabad,India
+                        <span>123 Market St, San Francisco, CA 94105</span>
                     </div>
                     <div style="margin-bottom: 20px;">
-                        <i class="fa-solid fa-envelope" style="color: var(--secondary-color); width: 25px;"></i>
-                        hello@learnspacedigital.com
+                        <i class="fa-solid fa-phone" style="color: var(--primary-color); width: 25px;"></i>
+                        <span>+1 (555) 000-0000</span>
                     </div>
                     <div style="margin-bottom: 20px;">
-                        <i class="fa-solid fa-phone" style="color: var(--secondary-color); width: 25px;"></i>
-                        +1 234 567 890
+                        <i class="fa-solid fa-envelope" style="color: var(--neon-cyan); width: 25px;"></i>
+                        <span>hello@learnspacedigital.com</span>
                     </div>
 
                     <div style="margin-top: 40px;">
@@ -457,7 +566,7 @@
     <!-- <section class="team-section reveal">
         <div class="container">
             <h2 class="section-title">Meet Our Experts</h2>
-            <p class="section-subtitle">The minds behind your digital growth and success.</p>
+            <p class="section-subtitle">The minds behind your digital growth and success.</p> 
 
             <div class="team-grid"> -->
     <!-- Shortened grid for Home page teaser -->
@@ -475,7 +584,7 @@
                     <div class="team-image-box">
                         <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
                             alt="Sarah Johnson">
-                    </div>
+                    </div> 
                     <div class="team-info">
                         <h3>Sarah Johnson</h3>
                         <p>Head of Strategy</p>
@@ -497,10 +606,13 @@
                 <a href="about.html" class="btn btn-outline">Meet Full Team</a>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- FAQ Section -->
-    <section class="faq-section reveal">
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">FAQ</span>
+    </div>
+    <section class="faq-section reveal bg-soft-1">
         <div class="container">
             <h2 class="section-title">Frequently Asked Questions</h2>
             <p class="section-subtitle">Find answers to the most common questions about our services and process.</p>

@@ -12,87 +12,42 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <!-- <style>
-        .home-hero {
-            height: 82vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: linear-gradient(135deg, #FFF7ED 0%, #FFFFFF 100%);
-            padding: 15px 10px;
-        }
-
-        .home-card {
-            max-width: 800px;
-            padding: 40px 20px;
-            background: white;
-            border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(249, 115, 22, 0.1);
-        }
-
-        .home-card h1 {
-            font-size: 3.5rem;
-            color: #111827;
-            margin-bottom: 20px;
-        }
-
-        .home-card p {
-            font-size: 1.25rem;
-            color: #4B5563;
-            margin-bottom: 40px;
-        }
-    </style> -->
 
 </head>
 
 <body>
-    <!-- 1. Header/Navigation Bar -->
-    <header>
-        <div class="container nav-container">
-            <a href="home.html" class="logo">
-                <i class="fa-solid fa-chart-line"></i>
-                LearnSpace<span>Digital</span>
-            </a>
+    <div class="pill-nav-container">
+        <a href="home.html" class="brand-pill">
+            <i class="fa-solid fa-chart-line"></i>
+            Learnspace <span>Digital</span>
+        </a>
+        <nav class="pill-nav">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="dropbtn">Services <i class="fa-solid fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="seo-optimization.html">SEO Optimization</a>
+                        <a href="social-media-marketing.html">Social Media</a>
+                        <a href="ppc-advertising.html">PPC Advertising</a>
+                        <a href="content-marketing.html">Content Marketing</a>
+                        <a href="email-marketing.html">Email Marketing</a>
+                        <a href="web-design.html">Web Design</a>
+                    </div>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-            <div class="mobile-menu-btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html" class="active">About</a></li>
-                    <li class="dropdown">
-                        <a href="services.html" class="dropbtn">Services <i class="fa-solid fa-chevron-down"
-                                style="font-size: 0.8em; margin-left: 5px;"></i></a>
-                        <div class="dropdown-content">
-                            <a href="seo-optimization.html">SEO Optimization</a>
-                            <a href="social-media-marketing.html">Social Media</a>
-                            <a href="ppc-advertising.html">PPC Advertising</a>
-                            <a href="content-marketing.html">Content Marketing</a>
-                            <a href="email-marketing.html">Email Marketing</a>
-                            <a href="web-design.html">Web Design</a>
-                        </div>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <div class="search-box">
-                    <input class="search-txt" type="text" name="" placeholder="Type to search">
-                    <a class="search-btn" href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                </div>
-                <a href="contact.html#contact" class="btn btn-primary">Get Started</a>
-            </div>
+        <div class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
         </div>
-    </header>
 
-    <div style="height: 80px;"></div> <!-- Spacer for fixed header -->
+        <a href="contact.html#contact" class="cta-pill">Get Started</a>
+    </div>
 
     <!-- 2. Hero Section -->
     <!-- <section class="hero-v2 reveal zoom-in mesh-gradient" style="min-height: 60vh; padding: 60px 10px;">
@@ -142,7 +97,7 @@
 
 
     <!-- 3. Our Story: Split-Section Design -->
-    <section id="story" class="split-section">
+    <section id="story" class="split-section bg-soft-1" style="padding: 100px 0; position: relative; z-index: 1;">
         <div class="split-container">
             <div class="split-content-side stagger-container">
                 <span class="badge stagger-fade-item" style="margin-bottom: 20px;">Our Legacy</span>
@@ -159,6 +114,13 @@
                     a digital legacy.</p>
 
                 <div class="floating-cards-container stagger-fade-item">
+                    <style>
+                        .float-card {
+                            background: var(--bg-dark) !important;
+                            border: 1px solid rgba(255, 255, 255, 0.05) !important;
+                            box-shadow: var(--shadow-md) !important;
+                        }
+                    </style>
                     <!-- Stat Card 1 -->
                     <div class="float-card" style="--delay: 0.1s;">
                         <div class="float-icon"><i class="fa-solid fa-rocket"></i></div>
@@ -286,44 +248,244 @@
             </div>
         </div>
     </section>
-    <!-- Mission Section -->
-    <section id="mission"
-        style="padding: 80px 0; background: linear-gradient(135deg, #fff7ed 0%, #ffffff 100%); position: relative; z-index: 2;">
-        <div class="container">
-            <div style="text-align: center; max-width: 760px; margin: 0 auto 60px;">
-                <p class="section-title" style="font-family: sans-serif;font-weight: bolder;">Our Mission</p>
-                <!-- <h2 class="section-title" style="margin-top: 16px;">Transforming Ambition Into <span
-                        class="highlight">Digital Reality</span></h2> -->
-                <!-- <p class="section-subtitle" style="margin-top: 16px;">
-                    Our mission is to empower businesses of every size with bold, data-backed digital strategies that
-                    create lasting impact — turning vision into measurable growth.
-                </p> -->
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Our Mission</span>
+    </div>
+    <section id="mission" class="mission-section bg-soft-1">
+        <style>
+            .mission-section {
+                padding: 100px 0;
+                position: relative;
+                z-index: 2;
+                overflow: hidden;
+            }
+
+            .mission-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 60px;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 40px;
+            }
+
+            .mission-visual-side {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+
+            .mission-text-side {
+                flex: 1.2;
+                max-width: 600px;
+            }
+
+            /* Rocket Styles & Animations */
+            .rocket-container {
+                position: relative;
+                width: 320px;
+                height: 420px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .rocket-graphic {
+                animation: rocket-float 4s ease-in-out infinite;
+                z-index: 3;
+                filter: drop-shadow(0 20px 30px rgba(95, 39, 205, 0.1));
+            }
+
+            @keyframes rocket-float {
+
+                0%,
+                100% {
+                    transform: translateY(0) rotate(0deg);
+                }
+
+                50% {
+                    transform: translateY(-30px) rotate(1deg);
+                }
+            }
+
+            .smoke-base {
+                position: absolute;
+                bottom: 20px;
+                width: 300px;
+                opacity: 0.7;
+                animation: smoke-pulse 4s ease-in-out infinite;
+                z-index: 2;
+            }
+
+            @keyframes smoke-pulse {
+
+                0%,
+                100% {
+                    transform: scale(1);
+                    opacity: 0.7;
+                }
+
+                50% {
+                    transform: scale(1.08);
+                    opacity: 0.5;
+                }
+            }
+
+            .mission-text-side h2 {
+                font-family: 'Outfit', sans-serif;
+                font-size: 3.2rem;
+                color: var(--text-main);
+                margin-bottom: 24px;
+                line-height: 1.1;
+            }
+
+            .mission-text-side p {
+                font-size: 1.2rem;
+                color: var(--text-muted);
+                line-height: 1.8;
+                margin-bottom: 30px;
+            }
+
+            .mission-pillars {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 24px;
+            }
+
+            .pillar-item {
+                background: #664288;
+                padding: 24px;
+                border-radius: 20px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+                border: 1px solid #f3f4f6;
+                transition: transform 0.3s ease;
+            }
+
+            .pillar-item:hover {
+                transform: translateY(-5px);
+            }
+
+            .pillar-item i {
+                font-size: 1.8rem;
+                color: var(--primary);
+                margin-bottom: 16px;
+                display: block;
+            }
+
+            .pillar-item h4 {
+                font-size: 1.2rem;
+                margin-bottom: 8px;
+                color: #111827;
+            }
+
+            .pillar-item p {
+                font-size: 0.95rem;
+                margin-bottom: 0;
+                line-height: 1.5;
+            }
+
+            @media (max-width: 992px) {
+                .mission-container {
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 50px;
+                }
+
+                .mission-pillars {
+                    grid-template-columns: 1fr;
+                }
+
+                .rocket-container {
+                    height: 350px;
+                }
+            }
+        </style>
+
+        <div class="mission-container">
+            <!-- Rocket Visual Side -->
+            <div class="mission-visual-side">
+                <div class="rocket-container">
+                    <div class="rocket-graphic">
+                        <svg width="200" height="280" viewBox="0 0 200 280" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <!-- Left Fin -->
+                            <path d="M50 180L10 240H60L50 180Z" fill="var(--neon-purple)" stroke="var(--neon-purple)"
+                                stroke-width="2" />
+                            <!-- Right Fin -->
+                            <path d="M150 180L190 240H140L150 180Z" fill="var(--neon-purple)"
+                                stroke="var(--neon-purple)" stroke-width="2" />
+
+                            <!-- Main Rocket Body -->
+                            <path d="M60 90C60 40 100 0 100 0C100 0 140 40 140 90V220H60V90Z" fill="white"
+                                stroke="var(--primary-color)" stroke-width="4" />
+
+                            <!-- Nose Cone (Teal) -->
+                            <path d="M60 90C60 40 100 0 100 0C100 0 140 40 140 90H60Z" fill="var(--neon-cyan)"
+                                stroke="var(--neon-cyan)" stroke-width="2" />
+
+                            <!-- Window Port -->
+                            <circle cx="100" cy="115" r="28" fill="#e0e7ff" stroke="var(--primary-color)"
+                                stroke-width="3" />
+                            <circle cx="100" cy="115" r="20" fill="white" fill-opacity="0.6" />
+                            <rect x="95" y="105" width="20" height="4" rx="2" transform="rotate(-45 95 105)"
+                                fill="white" />
+
+                            <!-- Body Lines (Blue Detail) -->
+                            <line x1="60" y1="185" x2="140" y2="185" stroke="var(--primary-color)" stroke-width="2"
+                                stroke-dasharray="6 4" />
+                            <line x1="60" y1="200" x2="140" y2="200" stroke="var(--primary-color)" stroke-width="2"
+                                stroke-dasharray="6 4" />
+
+                            <!-- Engine Base (Teal) -->
+                            <rect x="55" y="215" width="90" height="15" rx="7.5" fill="var(--neon-cyan)" />
+                        </svg>
+                    </div>
+                    <!-- Exhaust Smoke Graphics -->
+                    <div class="smoke-base">
+                        <svg width="300" height="100" viewBox="0 0 300 100" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0 100C0 70 30 50 70 50C100 50 120 70 140 70C160 70 180 40 210 40C240 40 270 60 300 60V100H0Z"
+                                fill="var(--neon-emerald)" fill-opacity="0.8" />
+                            <path
+                                d="M40 100C40 85 60 75 90 75C120 75 130 90 150 90C170 90 190 70 220 70C250 70 270 85 300 85V100H40Z"
+                                fill="var(--neon-purple)" fill-opacity="0.5" />
+                        </svg>
+                    </div>
+                </div>
             </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px;">
-                <div class="value-card" style="text-align: center;">
-                    <div class="value-icon"><i class="fa-solid fa-bolt"></i></div>
-                    <h3>Empower</h3>
-                    <p>We equip brands with the tools, insights, and creativity they need to stand out and lead in their
-                        industries.</p>
-                </div>
-                <div class="value-card" style="text-align: center;">
-                    <div class="value-icon"><i class="fa-solid fa-lightbulb"></i></div>
-                    <h3>Innovate</h3>
-                    <p>We stay ahead of digital trends, constantly evolving our strategies so our clients never fall
-                        behind.</p>
-                </div>
-                <div class="value-card" style="text-align: center;">
-                    <div class="value-icon"><i class="fa-solid fa-trophy"></i></div>
-                    <h3>Deliver</h3>
-                    <p>We are relentlessly focused on results — real numbers, real growth, and real ROI for every client
-                        we serve.</p>
+
+            <!-- Mission Content Text Side -->
+            <div class="mission-text-side">
+                <span class="badge" style="margin-bottom: 20px;">Our mission</span>
+                <h2>Transforming Ambition Into <span class="highlight">Digital Reality</span></h2>
+                <p>Our mission is to empower businesses of every size with bold, data-backed digital strategies that
+                    create lasting impact — turning vision into measurable growth.</p>
+
+                <div class="mission-pillars">
+                    <div class="pillar-item">
+                        <i class="fa-solid fa-rocket"></i>
+                        <h4>Launch</h4>
+                        <p>Accelerating brands with innovative digital entry strategies.</p>
+                    </div>
+                    <div class="pillar-item">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h4>Scale</h4>
+                        <p>Ensuring sustainable growth through data analytics.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- 4. Core Values -->
-    <section class="values-section"
-        style="padding: 80px 0; background: var(--bg-dark); position: relative; z-index: 1;">
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Our Values</span>
+    </div>
+    <section class="values-section bg-soft-2" style="padding: 100px 0; position: relative; z-index: 1;">
         <div class="container">
             <h2 class="section-title">Our Core Values</h2>
             <p class="section-subtitle">The principles that guide every decision we make.</p>
@@ -526,7 +688,8 @@
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M 0,0 H 160 V 65 Q 175,65 175,80 Q 175,95 160,95 V 160 H 95 Q 95,175 80,175 Q 65,175 65,160 H 0 V 0 Z"
-                                        fill="none" stroke="#F97316" stroke-width="3.5" stroke-linejoin="round" />
+                                        fill="none" stroke="var(--neon-purple)" stroke-width="3.5"
+                                        stroke-linejoin="round" />
                                 </svg>
                             </div>
                             <!-- Piece 2: Top-Right (Left Indent, Bottom Bump) -->
@@ -535,7 +698,8 @@
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M 0,0 H 160 V 160 H 95 Q 95,175 80,175 Q 65,175 65,160 H 0 V 95 Q 15,95 15,80 Q 15,65 0,65 V 0 Z"
-                                        fill="#F97316" stroke="#F97316" stroke-width="2" stroke-linejoin="round" />
+                                        fill="var(--neon-cyan)" stroke="var(--neon-cyan)" stroke-width="2"
+                                        stroke-linejoin="round" />
                                 </svg>
                             </div>
                             <!-- Piece 3: Bottom-Left (Top Indent, Right Bump) -->
@@ -544,7 +708,8 @@
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M 0,0 H 65 Q 65,15 80,15 Q 95,15 95,0 H 160 V 65 Q 175,65 175,80 Q 175,95 160,95 V 160 H 0 V 0 Z"
-                                        fill="#F97316" stroke="#F97316" stroke-width="2" stroke-linejoin="round" />
+                                        fill="var(--neon-emerald)" stroke="var(--neon-emerald)" stroke-width="2"
+                                        stroke-linejoin="round" />
                                 </svg>
                             </div>
                             <!-- Piece 4: Bottom-Right (Top Indent, Left Indent) -->
@@ -553,7 +718,8 @@
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M 0,0 H 65 Q 65,15 80,15 Q 95,15 95,0 H 160 V 160 H 0 V 95 Q 15,95 15,80 Q 15,65 0,65 V 0 Z"
-                                        fill="none" stroke="#F97316" stroke-width="3.5" stroke-linejoin="round" />
+                                        fill="none" stroke="var(--accent-color)" stroke-width="3.5"
+                                        stroke-linejoin="round" />
                                 </svg>
                             </div>
                         </div>
@@ -587,7 +753,10 @@
     </section>
 
     <!-- 5. Leadership Team -->
-    <section class="team-section">
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Leadership</span>
+    </div>
+    <section class="team-section bg-soft-1" style="padding: 100px 0; position: relative; z-index: 1;">
         <div class="container">
             <h2 class="section-title">The Minds Behind LearnSpace</h2>
             <p class="section-subtitle">Meet our leadership team of industry experts.</p>
@@ -630,7 +799,10 @@
     </section>
 
     <!-- 6. Our Journey (Timeline) -->
-    <section class="timeline-section">
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Our History</span>
+    </div>
+    <section class="timeline-section bg-soft-1" style="padding: 100px 0; position: relative; z-index: 1;">
         <div class="container">
             <h2 class="section-title">Our Journey</h2>
             <p class="section-subtitle">How we became a leader in digital marketing.</p>
@@ -745,7 +917,10 @@
         </div>
     </section>
     7. Reviews/Testimonials -->
-    <section class="testimonials">
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Testimonials</span>
+    </div>
+    <section class="testimonials bg-soft-1">
         <div class="container">
             <h2 class="section-title">Client Feedback</h2>
             <p class="section-subtitle">Don't just take our word for it.</p>

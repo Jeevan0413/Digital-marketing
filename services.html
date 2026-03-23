@@ -19,28 +19,31 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background: linear-gradient(135deg, #FFF7ED 0%, #FFFFFF 100%);
+            background: #4B2E5A;
+            background-image: var(--bg-soft-1);
             padding: 15px 10px;
         }
 
         .home-card {
             max-width: 800px;
             padding: 40px 20px;
-            background: white;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
-            border: 1px solid rgba(249, 115, 22, 0.1);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--glass-border);
         }
 
         .home-card h1 {
             font-size: 3.5rem;
-            color: #111827;
+            color: var(--text-main);
             margin-bottom: 20px;
         }
 
         .home-card p {
             font-size: 1.25rem;
-            color: #4B5563;
+            color: var(--text-muted);
             margin-bottom: 40px;
         }
     </style>
@@ -48,54 +51,41 @@
 </head>
 
 <body>
-    <!-- 1. Header/Navigation Bar -->
-    <header>
-        <div class="container nav-container">
-            <a href="home.html" class="logo">
-                <i class="fa-solid fa-chart-line"></i>
-                LearnSpace<span>Digital</span>
-            </a>
+    <div class="pill-nav-container">
+        <a href="home.html" class="brand-pill">
+            <i class="fa-solid fa-chart-line"></i>
+            Learnspace <span>Digital</span>
+        </a>
+        <nav class="pill-nav">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="dropbtn active">Services <i class="fa-solid fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="seo-optimization.html">SEO Optimization</a>
+                        <a href="social-media-marketing.html">Social Media</a>
+                        <a href="ppc-advertising.html">PPC Advertising</a>
+                        <a href="content-marketing.html">Content Marketing</a>
+                        <a href="email-marketing.html">Email Marketing</a>
+                        <a href="web-design.html">Web Design</a>
+                    </div>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
 
-            <div class="mobile-menu-btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="dropdown">
-                        <a href="services.html" class="dropbtn active">Services <i class="fa-solid fa-chevron-down"
-                                style="font-size: 0.8em; margin-left: 5px;"></i></a>
-                        <div class="dropdown-content">
-                            <a href="seo-optimization.html">SEO Optimization</a>
-                            <a href="social-media-marketing.html">Social Media</a>
-                            <a href="ppc-advertising.html">PPC Advertising</a>
-                            <a href="content-marketing.html">Content Marketing</a>
-                            <a href="email-marketing.html">Email Marketing</a>
-                            <a href="web-design.html">Web Design</a>
-                        </div>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <div class="search-box">
-                    <input class="search-txt" type="text" name="" placeholder="Type to search">
-                    <a class="search-btn" href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                </div>
-                <a href="contact.html#contact" class="btn btn-primary">Get Started</a>
-            </div>
+        <div class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
         </div>
-    </header>
 
-    <div style="height: 80px;"></div> <!-- Spacer for fixed header -->
+        <a href="contact.html#contact" class="cta-pill">Get Started</a>
+    </div>
 
     <!-- 4. Services Section -->
-    <section id="services" class="services reveal fade-in-up mesh-gradient">
+    <section id="services" class="services reveal fade-in-up bg-soft-2">
 
         <div class="services-slider-container">
             <h2 class="section-title"><span class="letter-pull-up">Our Services</span></h2>
@@ -192,53 +182,56 @@
                     </div>
 
                     <!-- New Service 7: Video Marketing -->
-                    <!-- <div class="service-card"> -->
-                    <!-- <div class="service-icon"><i class="fa-solid fa-video"></i></div> -->
-                    <!-- <h3>Video Marketing</h3> -->
-                    <!-- <p>Capture attention with stunning visual content that tells your brand's story.</p> -->
-                    <!-- <ul class="service-features"> -->
-                    <!-- <li>Animated Explainer Videos</li> -->
-                    <!-- <li>Professional Brand Stories</li> -->
-                    <!-- <li>Vertical Video (Reels/TikTok)</li> -->
-                    <!-- <li>Video SEO & Hosting</li> -->
-                    <!-- </ul> -->
-                    <!-- <a href="contact.html" class="btn btn-outline" style="margin-top: auto;">Learn More</a> -->
-                    <!-- </div> -->
+                    <div class="service-card" id="video">
+                        <div class="service-icon"><i class="fa-solid fa-video"></i></div>
+                        <h3>Video Marketing</h3>
+                        <p>Capture attention with stunning visual content that tells your brand's story.</p>
+                        <ul class="service-features">
+                            <li>Animated Explainer Videos</li>
+                            <li>Professional Brand Stories</li>
+                            <li>Vertical Video (Reels/TikTok)</li>
+                            <li>Video SEO & Hosting</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline" style="margin-top: auto;">Learn More</a>
+                    </div>
 
                     <!-- New Service 8: Branding -->
-                    <!-- <div class="service-card"> -->
-                    <!-- <div class="service-icon"><i class="fa-solid fa-palette"></i></div> -->
-                    <!-- <h3>Branding & Identity</h3> -->
-                    <!-- <p>Defining your unique voice and visual identity in a crowded marketplace.</p> -->
-                    <!-- <ul class="service-features"> -->
-                    <!-- <li>Logo Design & Style Guides</li> -->
-                    <!-- <li>Brand Positioning Strategy</li> -->
-                    <!-- <li>Market Analysis & Voice</li> -->
-                    <!-- <li>Visual Brand Audits</li> -->
-                    <!-- </ul> -->
-                    <!-- <a href="contact.html" class="btn btn-outline" style="margin-top: auto;">Learn More</a> -->
-                    <!-- </div> -->
+                    <div class="service-card" id="branding">
+                        <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+                        <h3>Branding & Identity</h3>
+                        <p>Defining your unique voice and visual identity in a crowded marketplace.</p>
+                        <ul class="service-features">
+                            <li>Logo Design & Style Guides</li>
+                            <li>Brand Positioning Strategy</li>
+                            <li>Market Analysis & Voice</li>
+                            <li>Visual Brand Audits</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline" style="margin-top: auto;">Learn More</a>
+                    </div>
 
                     <!-- New Service 9: CRM Automation -->
-                    <!-- <div class="service-card"> -->
-                    <!-- <div class="service-icon"><i class="fa-solid fa-robot"></i></div> -->
-                    <!-- <h3>CRM & Automation</h3> -->
-                    <!-- <p>Streamline your sales and marketing workflows with intelligent automation.</p> -->
-                    <!-- <ul class="service-features"> -->
-                    <!-- <li>CRM Implementation (HubSpot)</li> -->
-                    <!-- <li>Sales Funnel Automation</li> -->
-                    <!-- <li>Lead Scoring Systems</li> -->
-                    <!-- <li>Reporting & Dashboards</li> -->
-                    <!-- </ul> -->
-                    <!-- <a href="contact.html" class="btn btn-outline" style="margin-top: auto;">Learn More</a> -->
-                    <!-- </div> -->
+                    <div class="service-card" id="crm">
+                        <div class="service-icon"><i class="fa-solid fa-robot"></i></div>
+                        <h3>CRM & Automation</h3>
+                        <p>Streamline your sales and marketing workflows with intelligent automation.</p>
+                        <ul class="service-features">
+                            <li>CRM Implementation (HubSpot)</li>
+                            <li>Sales Funnel Automation</li>
+                            <li>Lead Scoring Systems</li>
+                            <li>Reporting & Dashboards</li>
+                        </ul>
+                        <a href="contact.html" class="btn btn-outline" style="margin-top: auto;">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- 6. Case Studies / Portfolio -->
-    <section class="case-studies">
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Case Studies</span>
+    </div>
+    <section class="case-studies bg-soft-1">
         <div class="container">
             <h2 class="section-title">Success Stories</h2>
             <p class="section-subtitle">Real results for real businesses.</p>
@@ -376,6 +369,9 @@
         </div>
     </section> -->
 
+    <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Thank You</span>
+    </div>
     <main class="home-hero">
         <div class="home-card">
             <h1>Thank You For Choosing <span class="highlight">LearnSpace Digital</span></h1>

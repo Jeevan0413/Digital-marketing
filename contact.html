@@ -15,51 +15,40 @@
 </head>
 
 <body>
-    <!-- 1. Header/Navigation Bar -->
-    <header>
-        <div class="container nav-container">
-            <a href="home.html" class="logo">
-                <i class="fa-solid fa-chart-line"></i>
-                LearnSpace<span>Digital</span>
-            </a>
+    <div class="pill-nav-container">
+        <a href="home.html" class="brand-pill">
+            <i class="fa-solid fa-chart-line"></i>
+            Learnspace <span>Digital</span>
+        </a>
+        <nav class="pill-nav">
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="services.html" class="dropbtn">Services <i class="fa-solid fa-chevron-down"
+                            style="font-size: 0.8em; margin-left: 5px;"></i></a>
+                    <div class="dropdown-content">
+                        <a href="seo-optimization.html">SEO Optimization</a>
+                        <a href="social-media-marketing.html">Social Media</a>
+                        <a href="ppc-advertising.html">PPC Advertising</a>
+                        <a href="content-marketing.html">Content Marketing</a>
+                        <a href="email-marketing.html">Email Marketing</a>
+                        <a href="web-design.html">Web Design</a>
+                    </div>
+                </li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
 
-            <div class="mobile-menu-btn">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="dropdown">
-                        <a href="services.html" class="dropbtn">Services <i class="fa-solid fa-chevron-down"
-                                style="font-size: 0.8em; margin-left: 5px;"></i></a>
-                        <div class="dropdown-content">
-                            <a href="seo-optimization.html">SEO Optimization</a>
-                            <a href="social-media-marketing.html">Social Media</a>
-                            <a href="ppc-advertising.html">PPC Advertising</a>
-                            <a href="content-marketing.html">Content Marketing</a>
-                            <a href="email-marketing.html">Email Marketing</a>
-                            <a href="web-design.html">Web Design</a>
-                        </div>
-                    </li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <div class="search-box">
-                    <input class="search-txt" type="text" name="" placeholder="Type to search">
-                    <a class="search-btn" href="#">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                </div>
-                <a href="#contact" class="btn btn-primary">Get Started</a>
-            </div>
+        <div class="mobile-menu-btn">
+            <i class="fa-solid fa-bars"></i>
         </div>
-    </header>
 
-    <div style="height: 80px;"></div> <!-- Spacer for fixed header -->
+        <a href="#contact" class="cta-pill">Get Started</a>
+    </div>
+
+    <!-- <div style="height: 80px;"></div> Spacer for fixed header -->
 
     <!-- 9. Call to Action (CTA) -->
     <!-- <section id="cta" class="cta-section">
@@ -73,7 +62,10 @@
     </section> -->
 
     <!-- 10. Contact Us -->
-    <section id="contact" class="contact mesh-gradient">
+    <!-- <div class="divider divider-with-text reveal fade-in-up">
+        <span class="divider-text">Get In Touch</span>
+    </div> -->
+    <section id="contact" class="contact bg-soft-1">
 
         <div class="container">
             <h2 class="section-title"><span class="letter-pull-up">Contact Us</span></h2>
@@ -81,8 +73,9 @@
 
             <div class="contact-wrapper">
                 <div class="contact-info">
-                    <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Get In Touch</h3>
-                    <p style="margin-bottom: 30px;">Have questions? Send us a message and we'll respond within 24 hours.
+                    <h3 style="font-size: 1.8rem; margin-bottom: 20px; color: white;">Get In Touch</h3>
+                    <p style="margin-bottom: 30px; color: rgba(255, 255, 255, 0.8);">Have questions? Send us a message
+                        and we'll respond within 24 hours.
                     </p>
 
                     <div style="margin-bottom: 20px;">
