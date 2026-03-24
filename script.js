@@ -513,10 +513,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // --- 28. SERVICES DROPDOWN LOGIC ---
-// (Hover logic is handled via CSS in style.css)
 document.addEventListener('DOMContentLoaded', () => {
-    // Optional: Keep this if you want to support touch devices or click-to-toggle on mobile
-    // For now, relying on CSS hover as requested.
+    const dropdownBtn = document.querySelector('.dropdown .dropbtn');
+    if (dropdownBtn) {
+        dropdownBtn.addEventListener('click', (e) => {
+            // Only apply click-to-toggle on mobile/tablet view
+            if (window.innerWidth <= 992) {
+                e.preventDefault();
+                dropdownBtn.parentElement.classList.toggle('active');
+            }
+        });
+    }
 });
 
 // --- 29. INFINITE SERVICES CAROUSEL ---
