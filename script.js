@@ -933,3 +933,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// --- 35. FUNNEL INTERACTION LOGIC (Our Journey Section) ---
+document.addEventListener('DOMContentLoaded', () => {
+    const funnelItems = document.querySelectorAll('.funnel-item');
+    const funnelStages = document.querySelectorAll('.funnel-stage');
+
+    if (funnelItems.length > 0 && funnelStages.length > 0) {
+        funnelStages.forEach((stage, index) => {
+            stage.addEventListener('mouseenter', () => {
+                // Update menu items
+                funnelItems.forEach(i => i.classList.remove('active'));
+                const targetItem = document.querySelector(`.funnel-item[data-index="${index}"]`);
+                if (targetItem) targetItem.classList.add('active');
+
+                // Update funnel stages
+                funnelStages.forEach(s => s.classList.remove('active'));
+                stage.classList.add('active');
+            });
+        });
+    }
+});
